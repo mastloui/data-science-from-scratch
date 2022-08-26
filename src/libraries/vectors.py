@@ -25,7 +25,7 @@ def vector_sum(vectors: List[Vector]) -> Vector:
 def scalar_multiply(c: float, v: Vector) -> Vector:
     return [c * v_i for v_i in v]
 
-def vector_mean(vectors: List[Vector]) -> Vector:
+def mean(vectors: List[Vector]) -> Vector:
     num_vectors = len(vectors)
     return scalar_multiply(1/num_vectors, vector_sum(vectors))
 
